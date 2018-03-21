@@ -18,6 +18,12 @@
 			<url>http://vijayendra.mudigal.com</url>
 		</developer>
 	</developers>
+<distributionManagement>
+  <snapshotRepository>
+    <id>1280</id>
+    <url>http://52.17.253.107:8081/nexus/content/repositories/1280</url>
+  </snapshotRepository>
+</distributionManagement>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
