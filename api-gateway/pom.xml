@@ -155,7 +155,7 @@
       <url>http://34.244.107.3:8081/nexus/content/repositories/snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
-    ...
+    
   </distributionManagement>
 
 </project>
