@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mudigal</groupId>
+	<groupId>Microservices_Group</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<artifactId>api-gateway</artifactId>
 	<packaging>jar</packaging>
@@ -12,8 +12,8 @@
 
 	<developers>
 		<developer>
-			<name>Vijayendra Mudigal</name>
-			<email>vijayendrap@gmail.com</email>
+			<name>Jegham Firas</name>
+			<email>firas.jegham@enis.tn</email>
 			<url>http://vijayendra.mudigal.com</url>
 		</developer>
 	</developers>
