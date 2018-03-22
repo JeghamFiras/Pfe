@@ -38,11 +38,18 @@
 		<module>service-two</module>
 		<module>service-three</module>
 	</modules>
-	 <distributionManagement>
-				  <snapshotRepository>
-					    <id>snapshots</id>
-					    <url>http://34.245.159.222:8081/nexus/content/repositories/snapshots</url>
-				  </snapshotRepository>
-         </distributionManagement>
+							<distributionManagement>
+						    <repository>
+						      <id>nexus</id>
+						      <name>Releases</name>
+						      <url>http://34.245.159.222:8081/nexus/content/repositories/releases</url>
+						    </repository>
+						    <snapshotRepository>
+						      <id>nexus</id>
+						      <name>Snapshot</name>
+						      <url>http://34.245.159.222:8081/nexus/content/repositories/snapshots</url>
+						    </snapshotRepository>
+						  </distributionManagement>
+	
 	
 </project>
