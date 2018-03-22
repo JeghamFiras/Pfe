@@ -5,7 +5,7 @@
 
 	<groupId>Microservices_Group</groupId>
 	<artifactId>microservices-sample</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>10.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Microservices Sample</name>
@@ -40,15 +40,20 @@
 	</modules>
 							<distributionManagement>
 						    <repository>
-						      <id>nexus</id>
-						      <name>Releases</name>
-						      <url>http://34.244.107.3:8081/nexus/content/repositories/releases</url>
+						      <uniqueVersion>false</uniqueVersion>
+						      <id>releases</id>
+						      <name>Realeases</name>
+						      <url>http://34.244.107.3:8081/nexus/content/repositories/releases/</url>
+						      <layout>default</layout>
 						    </repository>
 						    <snapshotRepository>
-						      <id>nexus</id>
-						      <name>Snapshot</name>
-						      <url>http://34.244.107.3:8081/nexus/content/repositories/snapshots</url>
+						      <uniqueVersion>true</uniqueVersion>
+						      <id>snapshots</id>
+						      <name>Snapshots</name>
+						      <url>http://34.244.107.3:8081/nexus/content/repositories/snapshots/</url>
+						      <layout>legacy</layout>
 						    </snapshotRepository>
+
 						  </distributionManagement>
 	
 	
