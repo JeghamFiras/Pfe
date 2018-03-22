@@ -38,7 +38,7 @@
 		<module>service-two</module>
 		<module>service-three</module>
 	</modules>
-	 distributionManagement>
+	 <distributionManagement>
 				  <snapshotRepository>
 					    <id>snapshots</id>
 					    <url>http://34.245.159.222:8081/nexus/content/repositories/snapshots</url>
