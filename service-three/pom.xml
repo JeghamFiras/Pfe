@@ -138,12 +138,25 @@
 		</dependencies>
 	</dependencyManagement>
 
-<distributionManagement>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://34.245.159.222:8081/nexus/content/repositories/snapshots</url>
-  </snapshotRepository>
-</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<build>
 		<finalName>service-three</finalName>
 		<plugins>
