@@ -130,7 +130,7 @@ under the License.
       <!--This sends everything else to /public -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://localhost:8081/repository/maven-public/</url>
+      <url>http://34.244.107.3:8081/nexus/repository/maven-public/</url>
     </mirror>
   </mirrors>
   <profiles>
