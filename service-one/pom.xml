@@ -156,7 +156,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-<
+
 
 	<build>
 		<finalName>service-one</finalName>
