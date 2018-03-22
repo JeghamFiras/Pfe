@@ -111,7 +111,7 @@ under the License.
 
    <servers>
    <server>
-      <id>Microservices_Group</id>
+      <id>nexus</id>
       <username>admin</username>
       <password>admin123</password>
    </server>
