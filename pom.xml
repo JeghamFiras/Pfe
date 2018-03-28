@@ -43,14 +43,14 @@
 						      <uniqueVersion>false</uniqueVersion>
 						      <id>releases</id>
 						      <name>Realeases</name>
-						      <url>http://52.211.202.38:8081/nexus/content/repositories/releases/</url>
+						      <url>http://34.250.187.81:8081/nexus/content/repositories/releases/</url>
 						      <layout>default</layout>
 						    </repository>
 						    <snapshotRepository>
 						      <uniqueVersion>true</uniqueVersion>
 						      <id>snapshots</id>
 						      <name>Snapshots</name>
-						      <url>http://52.211.202.38:8081/nexus/content/repositories/snapshots/</url>
+						      <url>http://34.250.187.81:8081/nexus/content/repositories/snapshots/</url>
 						      <layout>legacy</layout>
 						    </snapshotRepository>
 
