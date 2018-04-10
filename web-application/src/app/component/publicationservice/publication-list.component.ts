@@ -14,6 +14,6 @@ export class PublicationListComponent {
     constructor(private service : PublicationService) {}   
                               
     ngOnInit() {
-        this.service.getPosts();
+        this.post=this.service.getPosts();
     }
 }
