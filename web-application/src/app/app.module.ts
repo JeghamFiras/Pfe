@@ -15,6 +15,7 @@ import { GatewayService } from './service/gateway/gateway.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './component/header/header.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import {HttpModule} from "@angular/http";
 
 export const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -41,7 +42,8 @@ export const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule
   ],
   providers: [GatewayService,PublicationService],
   bootstrap: [AppComponent]

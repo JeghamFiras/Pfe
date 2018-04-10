@@ -18,7 +18,7 @@ export class PublicationService {
                            
                     }
                                         getPosts(){
-                                            
+                                            console.log(this.posts);
                                            return this.posts   ; }
                                         
                         deletePost(post: Publication){
