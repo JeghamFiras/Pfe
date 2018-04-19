@@ -145,14 +145,14 @@
       <uniqueVersion>false</uniqueVersion>
       <id>releases</id>
       <name>Realeases</name>
-      <url>http://54.229.6.85:8081/nexus/content/repositories/releases/</url>
+      <url>http:/34.245.197.109:8081/nexus/content/repositories/releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>snapshots</id>
       <name>Snapshots</name>
-      <url>http://54.229.6.85:8081/nexus/content/repositories/snapshots/</url>
+      <url>http://34.245.197.109:8081/nexus/content/repositories/snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
     
