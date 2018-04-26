@@ -5,6 +5,8 @@ import { PublicationService } from './component/publicationservice/publication.s
 import { PublicationListComponent } from './component/publicationservice/publication-list.component';
 import { PublicationInputComponent } from './component/publicationservice/publication-input.component';
 import { MicroserviceComponent } from './component/publicationservice/microservice.component';
+import { KibanaComponent } from './component/publicationservice/kibana.component';
+import { CadvisorComponent } from './component/publicationservice/cadvisor.component';
 import { Publication} from './component/publicationservice/publication.model';
 import { AppComponent } from './component/root/app.component';
 import { DataComponent } from './component/data/data.component';
@@ -20,8 +22,8 @@ import {HttpModule} from "@angular/http";
 export const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'service-one', component: MicroserviceComponent},
-  {path: 'service-two', component: DataComponent},
-  {path: 'service-three', component: DataComponent},
+  {path: 'service-two', component: KibanaComponent},
+  {path: 'service-three', component: CadvisorComponent},
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
@@ -35,7 +37,9 @@ export const appRoutes: Routes = [
     PublicationComponent,
     PublicationInputComponent,
     PublicationListComponent,
-    MicroserviceComponent
+    MicroserviceComponent,
+    KibanaComponent,
+    CadvisorComponent
   ],
   imports: [
     BrowserModule,

@@ -123,7 +123,7 @@ under the License.
     <mirror> <!--Send all requests to the public group -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://34.240.159.170:8081/nexus/content/repositories/snapshots/</url>
+      <url>http://172.31.29.205:8081/nexus/content/repositories/snapshots/</url>
     </mirror>
   </mirrors>
   <activeProfiles>
@@ -160,6 +160,7 @@ under the License.
         </pluginRepository>
       </pluginRepositories>
     </profile>
+  
   </profiles>
 
  <pluginGroups>
