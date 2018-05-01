@@ -25,6 +25,7 @@ export const appRoutes: Routes = [
   {path: 'service-one', component: MicroserviceComponent},
   {path: 'service-two', component: KibanaComponent},
   {path: 'service-three', component: CadvisorComponent},
+   {path: 'service-four', component: CadvisorComponent},
    {path: 'service-five', component: GithubComponent},
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
