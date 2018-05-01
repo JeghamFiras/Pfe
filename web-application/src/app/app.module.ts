@@ -7,6 +7,7 @@ import { PublicationInputComponent } from './component/publicationservice/public
 import { MicroserviceComponent } from './component/publicationservice/microservice.component';
 import { KibanaComponent } from './component/publicationservice/kibana.component';
 import { CadvisorComponent } from './component/publicationservice/cadvisor.component';
+import { GithubComponent } from './component/publicationservice/github.component';
 import { Publication} from './component/publicationservice/publication.model';
 import { AppComponent } from './component/root/app.component';
 import { DataComponent } from './component/data/data.component';
@@ -24,6 +25,7 @@ export const appRoutes: Routes = [
   {path: 'service-one', component: MicroserviceComponent},
   {path: 'service-two', component: KibanaComponent},
   {path: 'service-three', component: CadvisorComponent},
+   {path: 'service-five', component: GithubComponent},
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
@@ -39,7 +41,8 @@ export const appRoutes: Routes = [
     PublicationListComponent,
     MicroserviceComponent,
     KibanaComponent,
-    CadvisorComponent
+    CadvisorComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,

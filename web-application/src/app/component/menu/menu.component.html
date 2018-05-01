@@ -1,14 +1,59 @@
-<ul class="nav nav-tabs nav-justified">
-  <li id="service-one">
-    <a data-toggle="tab" href="javascript:void(0)"
-       routerLink="/service-one" (click)="one()">One</a>
-  </li>
-  <li id="service-two">
-    <a data-toggle="tab" href="javascript:void(0)"
-       routerLink="/service-two" (click)="two()">Two</a>
-  </li>
-  <li id="service-three">
-    <a data-toggle="tab" href="javascript:void(0)"
-       routerLink="/service-three" (click)="three()">Three</a>
-  </li>
-</ul>
+
+
+
+<section style="background:#efefe9;">
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-one" (click)="one()" title="Microservice-One">
+                      <span class="round-tabs one">
+                              <i class="fa fa-cubes fa-2"></i>
+                      </span> 
+                  </a></li>
+
+                  <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-two" (click)="two()" title="kibana">
+                     <span class="round-tabs two">
+                         <i class="fab fa-kickstarter-k"></i>
+                     </span> 
+           </a>
+                 </li>
+                 <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-three" (click)="three()" title="cadvisor">
+                     <span class="round-tabs three">
+                          <i class="fab fa-tripadvisor"></i>
+                     </span> </a>
+                     </li>
+
+                     <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-one" (click)="one()" title="cloudwatch">
+                         <span class="round-tabs four">
+                              <i class="fas fa-cloud"></i>
+                         </span> 
+                     </a></li>
+
+                     <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-five" (click)="five()" title=""github>
+                         <span class="round-tabs five">
+                              <i class="fas fa-code-branch"></i>
+                         </span> </a>
+                     </li>
+                     
+                     </ul></div>
+
+                     
+
+</div>
+</div>
+</div>
+</section>
+<script>$(function(){
+$('a[title]').tooltip();
+});</script>
+                   
