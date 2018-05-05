@@ -22,5 +22,5 @@ cd build/docker/
 # command line arguement
 export profile=$1
 
-# Deploy
+#Deploy
 docker-compose up --build -d
