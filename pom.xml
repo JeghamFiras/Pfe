@@ -18,21 +18,7 @@
 			<url>http://vijayendra.mudigal.com</url>
 		</developer>
 	</developers>
-		<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<!-------sonar exclusion ----->
-	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	    <sonar.host.url>http://172.31.29.205/</sonar.host.url>
-	    <sonar.jdbc.url>jdbc:postgresql://172.31.29.205/sonar</sonar.jdbc.url>
-	    <sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
-	    <sonar.jdbc.username>sonar</sonar.jdbc.username>
-	    <sonar.jdbc.password>sonar</sonar.jdbc.password>
-	    <sonar.exclusions>org/binarytherapy/generated/**/*, **/GuiceBindComposer.java</sonar.exclusions>
-	    <sonar.dynamic>reuseReports</sonar.dynamic>
-
-	</properties>
+	
 
 
 	<parent>
