@@ -17,6 +17,20 @@
 			<url>http://vijayendra.mudigal.com</url>
 		</developer>
 	</developers>
+	<profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://172.31.29.205:9000
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -31,6 +45,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.2</version>
+</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
