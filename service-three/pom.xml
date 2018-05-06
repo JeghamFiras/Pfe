@@ -214,7 +214,7 @@
 	<distributionManagement>
   <snapshotRepository>
     <id>PfeVermeg</id>
-    <url>http://34.244.212.59:8081/nexus/content/repositories/PfeVermeg</url>
+    <url>http://172.31.29.205:8081/nexus/content/repositories/PfeVermeg</url>
   </snapshotRepository>
 </distributionManagement>
 
