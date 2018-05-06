@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>central</groupId>
+	<groupId>PfeVermeg</groupId>
 	<version>10.0.4-SNAPSHOT</version>
 	<artifactId>service-one</artifactId>
 	<packaging>jar</packaging>
@@ -164,6 +164,25 @@
 	<build>
 		<finalName>service-one</finalName>
 		<plugins>
+				<plugin>
+																			   <groupId>org.sonatype.plugins</groupId>
+																			   <artifactId>nexus-staging-maven-plugin</artifactId>
+																			   <version>1.5.1</version>
+																			   <executions>
+																			      <execution>
+																			         <id>default-deploy</id>
+																			         <phase>deploy</phase>
+																			         <goals>
+																			            <goal>deploy</goal>
+																			         </goals>
+																			      </execution>
+																			   </executions>
+																			   <configuration>
+																			      <serverId>nexus</serverId>
+																			      <nexusUrl>http://34.244.212.59:8081/nexus/</nexusUrl>
+																			      <skipStaging>true</skipStaging>
+																			   </configuration>
+																			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -191,21 +210,10 @@
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>releases</id>
-      <name>Realeases</name>
-      <url>http://172.31.29.205:8081/nexus/content/repositories/releases/</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <uniqueVersion>true</uniqueVersion>
-      <id>snapshots</id>
-      <name>Snapshots</name>
-      <url>http://172.31.29.205:8081/nexus/content/repositories/snapshots/</url>
-      <layout>default</layout>
-    </snapshotRepository>
-    
-  </distributionManagement>
+<distributionManagement>
+  <snapshotRepository>
+    <id>PfeVermeg</id>
+    <url>http://34.244.212.59:8081/nexus/content/repositories/PfeVermeg</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>

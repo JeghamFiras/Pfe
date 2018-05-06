@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>central</groupId>
+	<groupId>PfeVermeg</groupId>
 	<artifactId>microservices-sample</artifactId>
 	<version>10.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -18,6 +18,7 @@
 			<url>http://vijayendra.mudigal.com</url>
 		</developer>
 	</developers>
+ 
 
 
 
@@ -39,23 +40,13 @@
 		<module>service-two</module>
 		<module>service-three</module>
 	</modules>
-							<distributionManagement>
-						    <repository>
-						      <uniqueVersion>false</uniqueVersion>
-						      <id>releases</id>
-						      <name>Realeases</name>
-						      <url>http://172.31.29.205:8081/nexus/content/repositories/releases/</url>
-						      <layout>default</layout>
-						    </repository>
-						    <snapshotRepository>
-						      <uniqueVersion>true</uniqueVersion>
-						      <id>snapshots</id>
-						      <name>Snapshots</name>
-						      <url>http://172.31.29.205:8081/nexus/content/repositories/snapshots/</url>
-						      <layout>legacy</layout>
-						    </snapshotRepository>
-
-						  </distributionManagement>
+						<distributionManagement>
+  <snapshotRepository>
+    <id>PfeVermeg</id>
+    <url>http://34.244.212.59:8081/nexus/content/repositories/PfeVermeg</url>
+  </snapshotRepository>
+</distributionManagement>
+   
 	
 	
 </project>
