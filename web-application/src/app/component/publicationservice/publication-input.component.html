@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+            <div class="panel-body">
+                
+    
+                <script>
+                    var app = angular.module('myApp', []);
+                    app.controller('datCtrl', function($scope) {
+                        $scope.today = new Date();
+                    });
+                </script>
+                <span>
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <textarea class="form-control" formControlName="content" name="content" placeholder="What is in your mind?"></textarea>
+    <button type="submit" class="btn btn-success btn-xs">
+                                   Publier
+                                </button>
+</form>
+</span>
+                <br><br>
+                <i class="fa fa-tags" aria-hidden="true"></i> <a href="/tags/diaspora" class="tag">#Test-Microservice</a>  
+                <br><br>
+                <hr>
+    
+              
+            </div>
+        </div>
+        
+        
+        <!---------------------------------------------------------------------------------------------------------->
+        <!-----------------------------publication        ---------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------->
+   
+  <!------------------------------------------------------------------------------------------------------------------------------------->
+   <!---------------------------------------------publication list----------------------------------------------------------------------->   
+  <!------------------------------------------------------------------------------------------------------------------------------------->  
+    
+    
+    
+    
+      

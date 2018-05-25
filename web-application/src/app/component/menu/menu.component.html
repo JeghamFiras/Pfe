@@ -1,0 +1,53 @@
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tziIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-one" (click)="one()" title="Microservice-One">
+                      <span class="round-tabs one">
+                              <i class="fa fa-cubes fa-2"></i>
+                      </span> 
+                  </a></li>
+
+                  <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-two" (click)="two()" title="kibana">
+                     <span class="round-tabs two">
+                         <i class="fab fa-kickstarter-k"></i>
+                     </span> 
+           </a>
+                 </li>
+                 <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-three" (click)="three()" title="cadvisor">
+                     <span class="round-tabs three">
+                          <i class="fab fa-tripadvisor"></i>
+                     </span> </a>
+                     </li>
+
+                     <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-four" (click)="four()" title="cloudwatch">
+                         <span class="round-tabs four">
+                              <i class="fas fa-cloud"></i>
+                         </span> 
+                     </a></li>
+
+                     <li><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-five" (click)="five()" title=""github>
+                         <span class="round-tabs five">
+                              <i class="fas fa-download"></i>
+                         </span> </a>
+                     </li>
+                     
+                     </ul></div>
+
+                     
+
+
+<script>$(function(){
+$('a[title]').tooltip();
+});</script>
+                   
