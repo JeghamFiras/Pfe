@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mudigal</groupId>
-	<version>0.0.1-SNAPSHOT</version>
+		<modelVersion>4.0.0</modelVersion>
+	<groupId>PfeVermeg</groupId>
+	<version>10.0.4-SNAPSHOT</version>
 	<artifactId>api-gateway</artifactId>
 	<packaging>jar</packaging>
+	
 
-	<name>API Gateway</name>
-	<description>API gateway in microservices sample project</description>
+	<name>Api Gateway</name>
+	<description>Api Gateway in microservices sample project</description>
+
 
 	<developers>
 		<developer>
-			<name>Vijayendra Mudigal</name>
-			<email>vijayendrap@gmail.com</email>
-			<url>http://vijayendra.mudigal.com</url>
+			<name>Firas Jegham</name>
+			<email>firas.jegham@enis.tn</email>
+			<url>http://firasjegham.me</url>
 		</developer>
 	</developers>
 
@@ -145,7 +147,7 @@
 	  			<distributionManagement>
 											  <snapshotRepository>
 											    <id>PfeVermeg</id>
-											    <url>http://54.72.119.0:8081/nexus/content/repositories/PfeVermeg</url>
+											    <url>http://172.31.29.205:8081/nexus/content/repositories/PfeVermeg</url>
 											  </snapshotRepository>
 											</distributionManagement>
 
