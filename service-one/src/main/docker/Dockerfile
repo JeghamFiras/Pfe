@@ -1,7 +1,7 @@
 FROM openjdk:8-jre-alpine
 
-LABEL author="Vijayendra Mudigal"
-MAINTAINER vijayendrap@gmail.com
+LABEL author="Firas Jegham"
+MAINTAINER firas.jegham@enis.tn
 
 # environment
 EXPOSE 8082

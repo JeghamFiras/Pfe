@@ -1,8 +1,8 @@
 # Create image based on the official Node 6 image from dockerhub
 FROM node:6-alpine
 
-LABEL author="Vijayendra Mudigal"
-MAINTAINER vijayendrap@gmail.com
+LABEL author="Firas Jegham"
+MAINTAINER firas.jegham@enis.tn
 
 # Create a directory where our app will be placed
 RUN mkdir -p /usr/src/app
