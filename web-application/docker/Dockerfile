@@ -14,7 +14,9 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 
 # Install dependecies
-
+RUN npm install -g node-gyp
+RUN npm install --unsafe-perm node-sass
+RUN npm install standard@10.0.3 -g
 RUN npm install
 
 # Get all the code needed to run the app
