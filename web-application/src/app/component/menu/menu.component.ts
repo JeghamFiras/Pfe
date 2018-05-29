@@ -9,45 +9,48 @@ declare var $: any;
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-
+  
+format:String[]=["active","","","",""];
   constructor(private router: Router) { }
 
   one() {
-    $('#service-one').addClass('active');
-    $('#service-two').removeClass('active');
-    $('#service-three').removeClass('active');
-     $('#service-four').removeClass('active');
-    $('#service-five').removeClass('active');
+   this.format[0]="active";
+   this.format [1]="";
+   this.format[2]="";
+   this.format[3]="";
+   this.format[4]="";
+   
   }
 
   two() {
-    $('#service-one').removeClass('active');
-    $('#service-two').addClass('active');
-    $('#service-three').removeClass('active');
-     $('#service-four').removeClass('active');
-    $('#service-five').removeClass('active');
+    this.format[0]="";
+   this.format [1]="active";
+   this.format[2]="";
+   this.format[3]="";
+   this.format[4]="";
+   
   }
 
   three() {
-    $('#service-one').removeClass('active');
-    $('#service-two').removeClass('active');
-    $('#service-three').addClass('active');
-     $('#service-four').removeClass('active');
-    $('#service-five').removeClass('active');
+       this.format[0]="";
+   this.format [1]="";
+   this.format[2]="active";
+   this.format[3]="";
+   this.format[4]="";
   }
     four() {
-    $('#service-one').removeClass('active');
-    $('#service-two').removeClass('active');
-    $('#service-three').removeClass('active');
-    $('#service-four').addClass('active');
-    $('#service-five').removeClass('active');
+      this.format[0]="";
+   this.format [1]="";
+   this.format[2]="";
+   this.format[3]="active";
+   this.format[4]="";
   }
   five() {
-    $('#service-one').removeClass('active');
-    $('#service-two').removeClass('active');
-    $('#service-three').removeClass('active');
-    $('#service-four').removeClass('active');
-    $('#service-five').addClass('active');
+       this.format[0]="";
+   this.format [1]="";
+   this.format[2]="";
+   this.format[3]="";
+   this.format[4]="active";
   }
 
 }

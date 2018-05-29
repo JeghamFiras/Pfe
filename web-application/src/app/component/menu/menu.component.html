@@ -6,7 +6,7 @@
                     <div class="board-inner">
                     <ul class="nav nav-tabs" id="myTab">
                     <div class="liner"></div>
-                     <li class="active">
+                     <li class=" {{format[0]}}">
                      <a data-toggle="tab" href="javascript:void(0)"
        routerLink="/service-one" (click)="one()" title="Microservice-One">
                       <span class="round-tabs one">
@@ -14,31 +14,33 @@
                       </span> 
                   </a></li>
 
-                  <li><a data-toggle="tab" href="javascript:void(0)"
+                  <li class=" {{format[1]}}"><a data-toggle="tab" href="javascript:void(0)"
        routerLink="/service-two" (click)="two()" title="kibana">
                      <span class="round-tabs two">
                          <i class="fab fa-kickstarter-k"></i>
                      </span> 
            </a>
                  </li>
-                 <li><a data-toggle="tab" href="javascript:void(0)"
+                 <li class=" {{format[2]}}"><a data-toggle="tab" href="javascript:void(0)"
        routerLink="/service-three" (click)="three()" title="cadvisor">
                      <span class="round-tabs three">
                           <i class="fab fa-tripadvisor"></i>
                      </span> </a>
                      </li>
 
-                     <li><a data-toggle="tab" href="javascript:void(0)"
+                     <li class=" {{format[3]}}"><a data-toggle="tab" href="javascript:void(0)"
        routerLink="/service-four" (click)="four()" title="cloudwatch">
                          <span class="round-tabs four">
                               <i class="fas fa-cloud"></i>
                          </span> 
                      </a></li>
 
-                     <li><a data-toggle="tab" href="javascript:void(0)"
-       routerLink="/service-five" (click)="five()" title=""github>
+                     <li class=" {{format[4]}}"><a data-toggle="tab" href="javascript:void(0)"
+       routerLink="/service-five" (click)="five()" title="weave scope">
                          <span class="round-tabs five">
-                              <i class="fas fa-download"></i>
+                             <i class="fas fa-stethoscope"></i>
+
+
                          </span> </a>
                      </li>
                      
